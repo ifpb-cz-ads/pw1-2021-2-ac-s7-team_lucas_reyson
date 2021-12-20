@@ -1,9 +1,16 @@
-s = str(input('Infome uma string: '))
+T = [-10, -8, 0, 1, 2, 5, -2, -4]
 
-def acha(s, lista):
-    return s in lista
+menor_t = T[0]
+maior_t = T[0]
+soma = 0
 
-Lista = ['MA',  'ME', 'MI', 'MO', 'MU']
-
-print('{}'.format(s), acha(s, Lista))
-
+for z in T:
+    if z < minima:
+        minima = z
+    if z > maxima:
+        maxima = z
+    soma = soma + z
+     
+print("A menor temperatura é: {}".format(minima))
+print("A maior temperatura é: {}".format(maxima))
+print("A temperatura média é: {}".format(soma))
